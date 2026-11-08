@@ -1,0 +1,158 @@
+/* ==========================================================================
+   1. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #222;
+  line-height: 1.6;
+  background: #fcfcfc;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION (LAYOUT)
+   ========================================================================== */
+.topbar {
+  background: #111;
+  color: #fff;
+  padding: 8px 5%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header {
+  background: #fff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+header a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #1a6b3c; /* Official Association Green Accent */
+}
+
+/* ==========================================================================
+   3. BUTTON COMPONENT
+   ========================================================================== */
+.btn {
+  background: #1a6b3c;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  margin: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #13502c; /* Darker Green on Hover */
+}
+
+/* ==========================================================================
+   4. CONTENT SECTIONS & CONTAINERS
+   ========================================================================== */
+section {
+  padding: 50px 5%;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a6b3c;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+/* Flex / Grid layouts for responsive columns */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ==========================================================================
+   5. CARDS & INTERACTION (LEADERSHIP & EVENTS)
+   ========================================================================== */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE GALLERY SECTION
+   ========================================================================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  background: #eee;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Slight pop out effect on mouse hover */
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   7. FOOTER STYLES
+   ========================================================================== */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 30px 5%;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
